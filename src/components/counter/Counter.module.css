@@ -1,0 +1,52 @@
+.counter {
+    width: 250px;
+    height: 200px;
+    border: 3px solid #6ce4f9;
+    border-radius: 5%;
+}
+
+.value {
+    height: 50%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6ce4f9;
+    border-radius: 7px;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.maxValue {
+    color: red;
+    font-size: 1.2em;
+}
+
+.buttons {
+    height: 30%;
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #272c33;
+    border: 3px solid #6ce4f9;
+    border-radius: 7px;
+}
+
+.buttons>button {
+    font-size: 1.8em;
+    font-weight: bold;
+    background-color: #6ce4f9;
+    border: none;
+    border-radius: 5px;
+    padding: 0 18px;
+}
+
+button:disabled {
+    opacity: 0.3;
+    color: black;
+}
+
+button:active {
+    opacity: 0.3;
+}
