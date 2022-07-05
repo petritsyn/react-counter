@@ -1,0 +1,17 @@
+.button {
+    font-size: 1.8em;
+    font-weight: bold;
+    background-color: #6ce4f9;
+    border: none;
+    border-radius: 5px;
+    padding: 0 18px;
+}
+
+.button:disabled {
+    opacity: 0.3;
+    color: black;
+}
+
+.button:active {
+    opacity: 0.3;
+}

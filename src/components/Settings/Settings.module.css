@@ -1,0 +1,21 @@
+.settingsField {
+    font-size: 0.3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.settingsField div {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.settingsField input {
+    width: 100px;
+    outline:none;
+}
+
+.inputError {
+    border: 2px solid red;
+}
