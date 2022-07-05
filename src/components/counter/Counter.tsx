@@ -32,8 +32,6 @@ const Counter = (props: PropsType) => {
         <div className="counter">
             <Display value={props.value} maxValue={props.maxValue} incorrectValue={props.incorrectValue} enterValues={props.enterValue}/>
             <div className="buttons">
-                {/*<button onClick={props.incHandler} disabled={props.value === 5}>inc</button>*/}
-                {/*<button onClick={props.resetHandler} disabled={!props.value}>reset</button>*/}
                 <Button name="inc" onClick={props.incHandler} disabled={disabledInc()}/>
                 <Button name="reset" onClick={props.resetHandler} disabled={disabledReset()}/>
             </div>

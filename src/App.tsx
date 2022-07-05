@@ -74,6 +74,7 @@ function App() {
                       startValue={startValue}
                       value={value}
                       disableSetButton={disableSetButton}
+                      incorrectValue={incorrectValue}
             />
             <Counter value={value}
                      incHandler={incHandler}

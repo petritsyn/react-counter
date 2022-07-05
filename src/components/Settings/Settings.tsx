@@ -2,7 +2,6 @@ import React, {ChangeEvent} from 'react';
 import '../../App.css'
 import s from './Settings.module.css'
 import Button from "../Button/Button";
-import button from "../Button/Button";
 
 type PropsType = {
     setHandler: () => void
@@ -12,6 +11,7 @@ type PropsType = {
     startValue: number
     value: number
     disableSetButton: boolean
+    incorrectValue: boolean
 }
 
 const Settings = (props: PropsType) => {
@@ -42,13 +42,6 @@ const Settings = (props: PropsType) => {
         return ''
     }
 
-    const disabledSet = () => {
-        if (props.value === props.maxValue || props.value > props.maxValue) {
-            return true
-        }
-        return false
-    }
-
     return (
         <div className="counter">
             <div className="screen">
@@ -64,7 +57,7 @@ const Settings = (props: PropsType) => {
                 </div>
             </div>
             <div className="buttons">
-                <Button name="set" onClick={props.setHandler} disabled={props.disableSetButton}/>
+                <Button name="set" onClick={props.setHandler} disabled={props.disableSetButton || props.incorrectValue}/>
             </div>
         </div>
     );
